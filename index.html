@@ -5,68 +5,98 @@
     <title>
         PORTFOLIO-ADITYA
     </title>
-    <style>
-        body {
-            background-image: url("bg.jpg");
-            background-size: cover;
-            background-attachment: fixed;
-        }
-
-        .heading {
-            font-size: xxx-large;
-        }
-
-        .quote {
-            font-size: xx-large;
-            margin-left: 50px;
-        }
-
-        button.button {
-            background-color: rgb(151, 196, 255);
-            /* Green */
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            /* float: left;
-            display: none; */
-            display: block;
-            font-size: 16px;
-            opacity: 2;
-            border-radius: 50%;
-            width: 150px;
-        }
-        button.button button:hover{
-            background-color: rgb(50, 139, 255);
-            color: black;
-        }
-    </style>
-</head>
-
-<body>
-    <br>
-    <header>
-        <H1 class="heading">
-            ADITYA RAJ ARORA
-        </H1>
-    </header>
-    <i class="quote">
-        "In the race of life, be self confident, courageous and faithful in your abilities to win."
-    </i>
-    <br><br><br><br>
-    <form>
-        <div>
-        <button class="button" onclick="next('about.html')">About Me</button><br>
-        <button class="button" onclick="next('ach.html')">Achievements</button><br>
-        <button class="button" onclick="next('goal.html')">Goals</button><br>
-    </div>
-    </form>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script>
         function next(page) {
             window.open(page);
         }
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-50px";
+            }
+        }
+        
+            
+        
     </script>
+</head>
+
+<body>
+    <div id="navbar" style="z-index: 2;">
+        <a href="#navbartop">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#project">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div id="navbartop" style="z-index: 1;">
+        <a href="#navbartop">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#project">Projects</a>
+        <a href="#contact">Contact</a>
+    </div><br><br><br>
+    <div class="hero-image img1">
+        <div class="hero-text">
+            <h1>I am Aditya Raj Arora</h1>
+            <p>And I'm a Web Developer</p>
+
+        </div>
+    </div>
+
+    <div class="hero-image img2" style="z-index: 1; padding-bottom: 0%;">
+        <div class="hero-text1">
+            <p id="text1">
+                Born on 23<sup>rd</sup> November, 2004,<br>
+                I completed my 10<sup>th</sup> grade studies in 2021<br>
+                and now am working for my next target, that is grade 12<br>
+                With my interests in from math and technology<br>
+                CODING has become my favourite experience.<br>
+                As a part time gamer, I enjoy making my own games
+            </p>
+
+        </div>
+    </div>
+    <div id="project">
+        <h2>PROJECTS:</h2>
+        <a href="pong.html">
+                <div class="container" style="margin-left: 20px;">
+                    <img src="img1.png" alt="Avatar" class="image" style="width:300px; ">
+                    <div class="middle">
+                      <div class="text">Ping Pong</div>
+                    </div>
+                  </div>
+            </a>
+            <a href="maze.html">
+                <div class="container" style="margin-left: 320px;">
+                    <img src="img2.png" alt="Avatar" class="image" style="width:300px; ">
+                    <div class="middle">
+                      <div class="text">Maze Runner</div>
+                    </div>
+                  </div>
+            </a>
+            <a href="heist.html">
+                <div class="container" style="margin-left: 620px;">
+                    <img src="img3.png" alt="Avatar" class="image" style="width:300px; ">
+                    <div class="middle">
+                      <div class="text">Diamond Hiests</div>
+                    </div>
+                  </div>
+            </a>
+        
+    </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div class="icon-bar">
+        <a href="https://www.facebook.com/adityaraj.arora.336/" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/AdityaRajArora1" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="mailto:adityaraharora123@gmail.com" class="google"><i class="fa fa-google"></i></a>
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+    </div>
+
 </body>
 
 </html>
