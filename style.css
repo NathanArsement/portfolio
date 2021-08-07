@@ -155,7 +155,7 @@ body, html {
 .hero-text1 {
     text-align:inherit;
     position: absolute;
-    top: 25%;
+    top: 15%;
     left: 0;
     
     color: rgb(0, 14, 26);
@@ -251,11 +251,13 @@ body, html {
   }
   
   .container:hover .image {
-    opacity: 0.3;
+    opacity: 0.5;
+    transform: translateY(5px);
   }
   
   .container:hover .middle {
     opacity: 1;
+    
   }
   
   .text {
